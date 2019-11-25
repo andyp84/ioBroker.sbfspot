@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "sbfspot",
-    "version": "2.3.4",
+    "version": "2.4.0",
     "news": {
       "2.3.4": {
         "en": "update flot to version 3.0",
