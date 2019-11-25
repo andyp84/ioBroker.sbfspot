@@ -671,9 +671,9 @@ function startAdapter(options) {
             const path = require('path')
             const dbPath = path.resolve(__dirname, adapter.config.sqlite_path)
 
-            adapter.log.debug("--- connecting to " + dbPath);
+            adapter.log.debug("--- connecting to (readonly) " + dbPath);
 
-            sqlite_db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE,
+            sqlite_db = new sqlite3.Database(dbPath, sqlite3.OPEN_READONLY,
                 function (err) {
                     // error handling;
                     if (!err) {
